@@ -2,23 +2,40 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Anatomy of a CSS rule</title>
+	<title>Simple selectors</title>
 	<style>
-		p {
-			color: blue;
-			font-size: 20px;
-			width: 200px;
+		h2{
+			color: red;
+			text-align: center;
 		}
-		h1 {
-			color:green;
-			font-size: 36px;
+		.highlight{
+			font-size: 20px;
+			font-weight: bold;
+			font-style: italic;
+			background-color: green;
+			opacity: .6;
+		}
+		#mainpoint{
+			font-size: 24px;
+			font-weight: bold;
+			background-color: red;
+			opacity: .7;
+		}
+		p, h1{
+			color: blue;
 			text-align: center;
 		}
 	</style>
 </head>
 <body>
-	<h1>Anatomy of a CSS rule.</h1>
-	<h2>Subheading 1</h2>
-	<p>CSS ki jankaari.</p>
+	<h1>Simple Selectors(h1)</h1>
+	<h2>Subheading 1 (h2)</h2>
+	<p class="highlight">Gyaan na pelo</p>
+	<h2>Subheading 2(h2)</h2>
+	<p>Mana kiya na gyaan pelne ko</p>
+	<div>
+		bla bla bla
+		<span id ="mainpoint">id ka use</span>
+	</div>
 </body>
 </html>
