@@ -2,40 +2,28 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Simple selectors</title>
+	<title>Child-Selector</title>
 	<style>
-		h2{
-			color: red;
-			text-align: center;
-		}
-		.highlight{
-			font-size: 20px;
-			font-weight: bold;
-			font-style: italic;
-			background-color: green;
-			opacity: .6;
-		}
-		#mainpoint{
+		section > article{
+			color: green;
 			font-size: 24px;
-			font-weight: bold;
-			background-color: red;
-			opacity: .7;
 		}
-		p, h1{
-			color: blue;
-			text-align: center;
+		section > h2{
+			color: green;
 		}
 	</style>
 </head>
 <body>
-	<h1>Simple Selectors(h1)</h1>
-	<h2>Subheading 1 (h2)</h2>
-	<p class="highlight">Gyaan na pelo</p>
-	<h2>Subheading 2(h2)</h2>
-	<p>Mana kiya na gyaan pelne ko</p>
-	<div>
-		bla bla bla
-		<span id ="mainpoint">id ka use</span>
-	</div>
+	<h1>Child Selector</h1>
+	<section>
+		<h2>Subheading 1</h2>
+		<div>
+			<article>ARTICLE which inside div which is inside SECTION</article>
+		</div>
+	</section>
+	<section>
+		<article>ARTICLE as a direct child of the SECTION element</article>
+	</section>
+	<h2>Subheading 2</h2>
 </body>
 </html>
